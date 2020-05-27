@@ -1,0 +1,10 @@
+<h1>World</h1>
+<table>
+  <tr *ngFor="let xIndex of xArr">
+    <td *ngFor="let yIndex of yArr" class="cell">
+      {{grid[yIndex*x + xIndex]}}
+    </td>
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
